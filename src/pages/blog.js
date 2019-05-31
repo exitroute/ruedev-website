@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const AboutPage = () => (
+const BlogPage = () => (
   <div>
     <h1>RüBlog</h1>
     <p>
@@ -12,4 +12,4 @@ const AboutPage = () => (
   </div>
 )
 
-export default AboutPage
+export default BlogPage
