@@ -8,6 +8,7 @@ const IndexPage = props => (
       <div className={styles.siteTitle}>
         <h1>RüDev</h1>
         <p>Web Development From Berlin</p>
+        <p>#ryanjamesoshea</p>
       </div>
       <ul className={styles.nav}>
         <li>
