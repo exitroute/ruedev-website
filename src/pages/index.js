@@ -1,32 +1,14 @@
 import React from "react"
+import styles from "./index.module.css"
 import { Link } from "gatsby"
 
-const IndexPage = () => (
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "1fr 300px 300px 1fr",
-      alignItems: "center",
-      height: "100vh",
-    }}
-  >
-    <div
-      style={{
-        gridColumnStart: "2",
-        textAlign: "center",
-      }}
-    >
-      <h1>RÜDEV</h1>
+const IndexPage = (props) => (
+  <div className={styles.wrapper}>
+    <div className={styles.siteTitle}>
+      <h1>RüDev</h1>
       <p>Web Development From Berlin</p>
     </div>
-    <ul
-      style={{
-        gridColumnStart: "3",
-        textAlign: "center",
-        padding: "0",
-        listStyle: "none",
-      }}
-    >
+    <ul className={styles.nav}>
       <li>
         <button>
           <Link to="/about">About</Link>
