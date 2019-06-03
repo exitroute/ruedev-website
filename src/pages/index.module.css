@@ -1,7 +1,11 @@
+main {
+  box-sizing: border-box;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.66fr 1fr;
   height: 100vh;
 }
 
@@ -12,9 +16,19 @@
 
 .nav {
   align-self: start;
+  justify-self: center;
   text-align: center;
+  width: 300px;
   padding: 0;
   list-style: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  display: block;
+  border: 3px solid #000;
+  margin: 0.25rem 0;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
