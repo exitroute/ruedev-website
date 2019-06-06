@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -15,7 +14,6 @@ const BlogPage = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, est repellat quibusdam, corrupti voluptates a reprehenderit iusto consequatur natus culpa atque, dolor unde nisi optio nihil incidunt. Velit, consequuntur porro.
       </p>
     </section>
-    <Link to="/">Go to index</Link>
   </Layout>
 )
 

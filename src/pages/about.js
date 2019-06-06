@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -25,7 +24,6 @@ const AboutPage = () => (
         alias aperiam quo fuga dolore nostrum?
       </p>
     </section>
-    <Link to="/">Go to index</Link>
   </Layout>
 )
 
