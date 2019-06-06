@@ -9,10 +9,14 @@ const Nav = styled.nav`
 const NavList = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  margin-left: 0rem;
+  li {
+    margin-right: 1rem;
+  }
 `
 
 const NavLink = styled(Link)`
+  color: #000;
   text-decoration: none;
   display: block;
   border: 3px solid #000;
@@ -23,9 +27,6 @@ const NavLink = styled(Link)`
 const Menu = () => (
   <Nav>
     <NavList>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
       <li>
         <NavLink to="/about">About</NavLink>
       </li>

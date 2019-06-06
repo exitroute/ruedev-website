@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-import Menu from "./menu"
+import Header from "./header"
 
 import "./layout.css"
 
@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Menu />
+        <Header />
         <Container>
           <main>{children}</main>
           <footer>
