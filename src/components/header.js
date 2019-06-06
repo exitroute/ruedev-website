@@ -16,7 +16,7 @@ const Wrapper = styled.header`
     }
   }
   @media (min-width: 768px) {
-    grid-template-columns: auto 0.85fr;
+    grid-template-columns: 16rem 1fr;
   }
 `
 const TitleLink = styled(Link)`

@@ -7,11 +7,21 @@ import Header from "./header"
 
 import "./layout.css"
 
-const Container = styled.div`
+const Main = styled.main`
   margin: 0 auto;
   max-width: 960;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
+  section {
+    display: grid; 
+    @media (min-width: 992px) {
+      grid-template-columns: 16rem 1fr;
+      grid-auto-rows: auto;
+      p {
+        grid-column-start: 2;
+      }
+    }
+  }
 `
 
 const Layout = ({ children }) => (
@@ -28,13 +38,11 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header />
-        <Container>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with{` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </Container>
+        <Main>{children}</Main>
+        <footer>
+          © {new Date().getFullYear()}, Built with{` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
       </>
     )}
   />
