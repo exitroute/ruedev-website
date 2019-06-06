@@ -7,14 +7,16 @@ import Menu from "./menu"
 
 const Wrapper = styled.header`
   display: grid;
-  grid-template-columns: auto 0.85fr;
   align-items: center;
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
   div {
     h1 {
       margin-bottom: 0.125rem;
-    } 
+    }
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 0.85fr;
   }
 `
 const TitleLink = styled(Link)`
