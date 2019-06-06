@@ -6,8 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `RueDev Webdev`,
+    title: `RueDev WebDev`,
     description: `A web development agency based in Berlin`,
     author: `Ryan O'Shea`,
-  }
+  },
+  plugins: [`gatsby-plugin-styled-components`]  
 }
