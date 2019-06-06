@@ -12,20 +12,28 @@ const NavList = styled.ul`
   justify-content: space-evenly;
 `
 
+const NavLink = styled(Link)`
+  text-decoration: none;
+  display: block;
+  border: 3px solid #000;
+  margin: 0.25rem 0;
+  padding: 1rem;
+`
+
 const Menu = () => (
   <Nav>
     <NavList>
       <li>
-        <Link to="/">Home</Link>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <Link to="/projects">Projects</Link>
+        <NavLink to="/projects">Projects</NavLink>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <NavLink to="/blog">Blog</NavLink>
       </li>
     </NavList>
   </Nav>
