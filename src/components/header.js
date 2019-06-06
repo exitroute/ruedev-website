@@ -17,6 +17,7 @@ const Wrapper = styled.header`
   }
   @media (min-width: 768px) {
     grid-template-columns: 16rem 1fr;
+    column-gap: 1rem;
   }
 `
 const TitleLink = styled(Link)`

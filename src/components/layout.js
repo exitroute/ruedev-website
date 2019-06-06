@@ -17,6 +17,10 @@ const Main = styled.main`
     @media (min-width: 992px) {
       grid-template-columns: 16rem 1fr;
       grid-auto-rows: auto;
+      column-gap: 1rem;
+      h2 {
+        justify-self: end;
+      }
       p {
         grid-column-start: 2;
       }
