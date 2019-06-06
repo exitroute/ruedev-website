@@ -1,10 +1,18 @@
-import React from 'react';
-import PropTypes from "prop-types";
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
-import Menu from "./menu";
+import Menu from "./menu"
 
 import "./layout.css"
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 960;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,12 +28,13 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Menu />
-        <div>
+        <Container>
           <main>{children}</main>
           <footer>
-              © {new Date().getFullYear()}, Built with{` `}<a href="https://www.gatsbyjs.org">Gatsby</a>
+            © {new Date().getFullYear()}, Built with{` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
-        </div>
+        </Container>
       </>
     )}
   />
