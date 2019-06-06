@@ -13,7 +13,7 @@ const Main = styled.main`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   section {
-    display: grid; 
+    display: grid;
     @media (min-width: 992px) {
       grid-template-columns: 16rem 1fr;
       grid-auto-rows: auto;
@@ -24,6 +24,17 @@ const Main = styled.main`
       p {
         grid-column-start: 2;
       }
+    }
+  }
+`
+const Footer = styled.footer`
+  padding: 0px 1.0875rem 1.45rem;
+  display: grid;
+  @media (min-width: 992px) {
+    grid-template-columns: 16rem 1fr;
+    column-gap: 1rem;
+    p {
+      grid-column-start: 2;
     }
   }
 `
@@ -43,10 +54,12 @@ const Layout = ({ children }) => (
       <>
         <Header />
         <Main>{children}</Main>
-        <footer>
-          © {new Date().getFullYear()}, Built with{` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer>
+          <p>
+            © {new Date().getFullYear()}, Built with{` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
+        </Footer>
       </>
     )}
   />
