@@ -19,6 +19,7 @@ main {
   justify-self: center;
   text-align: center;
   width: 300px;
+  margin-left: 0;
   padding: 0;
   list-style: none;
 }
