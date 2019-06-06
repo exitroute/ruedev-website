@@ -5,5 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `RueDev Webdev`,
+    description: `A web development agency based in Berlin`,
+    author: `Ryan O'Shea`,
+  }
 }
