@@ -10,18 +10,21 @@ const NavList = styled.ul`
   list-style: none;
   display: flex;
   margin-left: 0rem;
+  @media (min-width: 992px) {
+        margin-left: 0.5rem;
+      };
   li {
     margin-right: 1rem;
-  }
+  };
 `
 
 const NavLink = styled(Link)`
   color: #000;
   text-decoration: none;
   display: block;
-  border: 3px solid #000;
+  border: 1px solid #000;
   margin: 0.25rem 0;
-  padding: 1rem;
+  padding: 0.5rem;
 `
 
 const Menu = () => (
