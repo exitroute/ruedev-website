@@ -10,5 +10,15 @@ module.exports = {
     description: `A web development agency based in Berlin`,
     author: `Ryan O'Shea`,
   },
-  plugins: [`gatsby-plugin-styled-components`]  
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
 }
