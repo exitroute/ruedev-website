@@ -2,16 +2,28 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-export default function projectTemplate({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
+import styled from "styled-components"
+
+const Role = styled.p`
+  && {
+    grid-column-start: 1;
+    @media (min-width: 992px) {
+      text-align: right; 
+    }
+  }
+`
+const Title = styled.h2`
+  margin-bottom: 0.25rem;
+`
+
+export default function projectTemplate({ data,}) {
+  const { markdownRemark } = data 
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
       <section>
-        <h2>{frontmatter.title}</h2>
-        <h3>{frontmatter.date}</h3>
+        <Title>{frontmatter.title}</Title>
+        <Role>{frontmatter.role}</Role>
         <div
           dangerouslySetInnerHTML={{ __html: html }}
         />
@@ -28,6 +40,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        role
       }
     }
   }
