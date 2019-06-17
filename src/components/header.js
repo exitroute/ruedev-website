@@ -14,6 +14,9 @@ const Wrapper = styled.header`
     h1 {
       margin-bottom: 0.125rem;
     }
+    @media (min-width: 992px) {
+        text-align: right;
+      }
   }
   @media (min-width: 768px) {
     grid-template-columns: 16rem 1fr;
