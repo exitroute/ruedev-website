@@ -18,8 +18,9 @@ const ProjectsPage = ({ data }) => (
       {data.allMarkdownRemark.edges.map(project => (
         <div key={project.node.id}>
           <h3>{project.node.frontmatter.title}</h3>
-          <br />
+          <p>{project.node.excerpt}</p>
           <Link to={project.node.frontmatter.path}>Read more</Link>
+          <br />
         </div>
       ))}
     </section>
@@ -32,6 +33,7 @@ export const projectQuery = graphql`
       edges {
         node {
           id
+          excerpt
           frontmatter {
             path
             date
