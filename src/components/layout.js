@@ -9,10 +9,12 @@ import "./layout.css"
 
 const Main = styled.main`
   margin: 0 auto;
-  max-width: 960;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   section {
+    div {
+      padding: 1rem 0;
+    }
     display: grid;
     @media (min-width: 992px) {
       grid-template-columns: 16rem 1fr;
@@ -22,6 +24,10 @@ const Main = styled.main`
         justify-self: end;
       }
       p {
+        grid-column-start: 2;
+        max-width: 960px;
+      }
+      div {
         grid-column-start: 2;
       }
     }
