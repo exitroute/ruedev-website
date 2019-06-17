@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-
+import Layout from "../components/layout"
 
 export default function projectTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -8,16 +8,15 @@ export default function projectTemplate({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="project-container">
-      <div className="project">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+    <Layout>
+      <section>
+        <h2>{frontmatter.title}</h2>
+        <h3>{frontmatter.date}</h3>
         <div
-          className="project-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-      </div>
-    </div>
+      </section>
+    </Layout>
   )
 }
 
