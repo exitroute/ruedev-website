@@ -1,7 +1,7 @@
 ---
-path: "/projects/resume-bot"
+path: "/projects/resume-site"
 date: "2019-06-16"
-title: "Resume Bot"
+title: "Resume Site"
 role: "Developer"
 ---
 ### Overview
