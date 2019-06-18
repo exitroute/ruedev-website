@@ -23,14 +23,26 @@ const NavList = styled.ul`
     margin-right: 1rem;
   }
 `
-
-const NavLink = styled(Link)`
+const NavLink = styled(Link).attrs({
+  activeClassName: "active"
+})`
   color: #000;
   text-decoration: none;
   display: block;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   margin: 0.25rem 0;
   padding: 0.5rem;
+
+  :hover {
+    background: #85bb65;
+    border: 1px solid white;
+  }
+  
+  &.active {
+    background: pink;
+    border: 1px solid white;
+  }
+
 `
 
 const Menu = () => (
@@ -48,7 +60,6 @@ const Menu = () => (
       <li>
         <NavLink to="/contact">Contact</NavLink>
       </li>
-
     </NavList>
   </Nav>
 )
