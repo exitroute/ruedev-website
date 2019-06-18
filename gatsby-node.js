@@ -4,6 +4,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const projectTemplate = path.resolve(`src/templates/projectTemplate.js`)
+  const blogTemplate = path.resolve(`src/templates/blogTemplate.js`)
 
   return graphql(`
     {
@@ -14,7 +15,11 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             frontmatter {
+              title
               path
+              category
+              date
+              tags
             }
           }
         }
@@ -26,11 +31,20 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: projectTemplate,
-        context: {}, // additional data can be passed via context
-      })
+      console.log(node);
+      if (node.frontmatter.category === "blog-post") {
+        createPage({
+          path: node.frontmatter.path,
+          component: blogTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      } else {
+        createPage({
+          path: node.frontmatter.path,
+          component: projectTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      }
     })
   })
 }

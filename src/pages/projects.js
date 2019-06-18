@@ -15,7 +15,9 @@ const ProjectsPage = ({ data }) => (
         laborum ut quibusdam tempore nostrum nulla aut sed iure inventore
         tenetur at.
       </p>
-      {data.allMarkdownRemark.edges.map(project => (
+      {data.allMarkdownRemark.edges
+      .filter(project => project.node.frontmatter.category === "project-post")
+      .map(project => (
         <div key={project.node.id}>
           <h3>{project.node.frontmatter.title}</h3>
           <p>{project.node.excerpt}</p>
@@ -38,6 +40,7 @@ export const projectQuery = graphql`
             path
             date
             title
+            category
           }
         }
       }
