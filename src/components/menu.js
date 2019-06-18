@@ -4,18 +4,24 @@ import styled from "styled-components"
 
 const Nav = styled.nav`
   padding-top: 2rem;
+  display: flex;
+  @media (min-width: 768px) and (max-width: 992px) {
+    justify-content: right
+  }
 `
 
 const NavList = styled.ul`
   list-style: none;
   display: flex;
   margin-left: 0rem;
+
   @media (min-width: 992px) {
-        margin-left: 0.5rem;
-      };
+    margin-left: 0.5rem;
+  }
+
   li {
     margin-right: 1rem;
-  };
+  }
 `
 
 const NavLink = styled(Link)`
