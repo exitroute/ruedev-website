@@ -45,6 +45,10 @@ const Menu = () => (
       <li>
         <NavLink to="/blog">Blog</NavLink>
       </li>
+      <li>
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
+
     </NavList>
   </Nav>
 )
