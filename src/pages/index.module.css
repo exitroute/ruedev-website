@@ -26,17 +26,18 @@ main {
 }
 
 .nav li a {
-  color: #000;
+  color: #222;
   text-decoration: none;
   display: block;
-  border: 3px solid #000;
+  border: 3px solid #455f35;
   margin: 0.25rem 0;
   padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .nav li a:hover {
   background: #85bb65;
-  border: 3px solid pink;
+  border: 3px solid #fff;
 }
 
 @media (min-width: 768px) {

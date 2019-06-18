@@ -6,7 +6,7 @@ const ContactPage = () => (
   <Layout>
     <section>
       <h2>Contact RüDev</h2>
-      </section>
+    </section>
   </Layout>
 )
 
