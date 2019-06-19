@@ -2,12 +2,11 @@
 path: "/rueblog/alright-wurld"
 category: "blog-post"
 date: "2019-06-16"
-title: "Alright Wurld"
+title: "Alright Wurld..!?"
 author: "Ryan James O'Shea"
 tags: ["project", "react"]
 ---
-### How You Doing?
-#### Or the situation is very normal.  
+### Or just how  very is the situation normal?  
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
