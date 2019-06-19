@@ -48,12 +48,7 @@ const Layout = ({ children }) => (
       <>
         <Header />
         <Main>{children}</Main>
-        <Footer>
-          <p>
-            © {new Date().getFullYear()}, Built with{` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </p>
-        </Footer>
+        </Container>
       </>
     )}
   />
