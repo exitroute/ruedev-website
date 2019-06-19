@@ -33,18 +33,6 @@ const Main = styled.main`
     }
   }
 `
-const Footer = styled.footer`
-  padding: 0px 1.0875rem 1.45rem;
-  display: grid;
-  @media (min-width: 992px) {
-    grid-template-columns: 16rem 1fr;
-    column-gap: 1rem;
-    p {
-      grid-column-start: 2;
-    }
-  }
-`
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
