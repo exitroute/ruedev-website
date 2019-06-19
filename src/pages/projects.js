@@ -1,8 +1,24 @@
 import React from "react"
 import Link from "gatsby-link"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
+
+const ProjectContainer = styled.div`
+  @media (min-width: 992px) {
+    grid-column-start: 2;
+  }
+  margin: 1rem 0;
+  background: #dcdcdc;
+  padding: 0.8rem;
+  :hover {
+    background: #d3d3d3;
+  }
+`
+const StyledLink = styled(Link)`
+  color: #000;
+`
 
 const ProjectsPage = ({ data }) => (
   <Layout>
@@ -16,15 +32,15 @@ const ProjectsPage = ({ data }) => (
         tenetur at.
       </p>
       {data.allMarkdownRemark.edges
-      .filter(project => project.node.frontmatter.category === "project-post")
-      .map(project => (
-        <div key={project.node.id}>
-          <h3>{project.node.frontmatter.title}</h3>
-          <p>{project.node.excerpt}</p>
-          <Link to={project.node.frontmatter.path}>Read more</Link>
-          <br />
-        </div>
-      ))}
+        .filter(project => project.node.frontmatter.category === "project-post")
+        .map(project => (
+          <ProjectContainer key={project.node.id}>
+            <StyledLink to={project.node.frontmatter.path}>
+              <h3>{project.node.frontmatter.title}</h3>
+            </StyledLink>
+            <p>{project.node.excerpt}</p>
+          </ProjectContainer>
+        ))}
     </section>
   </Layout>
 )

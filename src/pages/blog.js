@@ -1,8 +1,24 @@
 import React from "react"
 import Link from "gatsby-link"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
+
+const BlogContainer = styled.div`
+  @media (min-width: 992px) {
+    grid-column-start: 2;
+  }
+  margin: 1rem 0;
+  background: #dcdcdc;
+  padding: 0.8rem;
+  :hover {
+    background: #d3d3d3;
+  }
+`
+const StyledLink = styled(Link)`
+  color: #000;
+`
 
 const BlogPage = ({ data }) => (
   <Layout>
@@ -21,12 +37,12 @@ const BlogPage = ({ data }) => (
       {data.allMarkdownRemark.edges
         .filter(post => post.node.frontmatter.category === "blog-post")
         .map(post => (
-          <div key={post.node.id}>
-            <h3>{post.node.frontmatter.title}</h3>
+          <BlogContainer key={post.node.id}>
+            <StyledLink to={post.node.frontmatter.path}>
+              <h3>{post.node.frontmatter.title}</h3>
+            </StyledLink>
             <p>{post.node.excerpt}</p>
-            <Link to={post.node.frontmatter.path}>Read more</Link>
-            <br />
-          </div>
+          </BlogContainer>
         ))}
     </section>
   </Layout>
