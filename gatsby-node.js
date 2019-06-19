@@ -29,7 +29,6 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-
     return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       if (node.frontmatter.category === "blog-post") {
         createPage({
