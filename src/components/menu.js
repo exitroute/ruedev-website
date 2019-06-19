@@ -9,18 +9,17 @@ const Nav = styled.nav`
     justify-content: right
   }
 `
-
 const NavList = styled.ul`
   list-style: none;
   display: flex;
   margin-left: 0rem;
 
-  @media (min-width: 992px) {
-    margin-left: 0.5rem;
+  li {
+    margin: 0 2px;
   }
 
-  li {
-    margin-right: 1rem;
+  @media (min-width: 992px) {
+    margin-left: 0.5rem;
   }
 `
 const NavLink = styled(Link).attrs({
@@ -29,18 +28,15 @@ const NavLink = styled(Link).attrs({
   color: #000;
   text-decoration: none;
   display: block;
-  border: 1px solid #ccc;
   margin: 0.25rem 0;
   padding: 0.5rem;
 
   :hover {
     background: #85bb65;
-    border: 1px solid white;
   }
   
   &.active {
     background: pink;
-    border: 1px solid white;
   }
 
 `
