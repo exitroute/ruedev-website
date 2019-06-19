@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import Menu from "./menu"
 
-const Wrapper = styled.header`
+const Wrapper = styled.div`
   display: grid;
   align-items: center;
   margin: 0 auto;
