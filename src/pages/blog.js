@@ -18,6 +18,10 @@ const BlogContainer = styled.div`
 `
 const StyledLink = styled(Link)`
   color: #000;
+  text-decoration: none;
+  :hover {
+    text-decoration-line: underline;
+  }
 `
 
 const BlogPage = ({ data }) => (
