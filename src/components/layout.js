@@ -19,6 +19,7 @@ const Main = styled.main`
   section {
     display: grid;
     grid-template-columns: minmax(auto, 600px);
+    margin-bottom: 2rem;
     @media (min-width: 992px) {
       grid-template-columns: 16rem minmax(auto, 600px);
       grid-auto-rows: auto;
