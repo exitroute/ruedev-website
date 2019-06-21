@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
+import Section from "../components/section"
+
 
 const ProjectContainer = styled.div`
   @media (min-width: 992px) {
@@ -26,7 +28,7 @@ const StyledLink = styled(Link)`
 
 const ProjectsPage = ({ data }) => (
   <Layout>
-    <section>
+    <Section>
       <h2>Projects by RüDev</h2>
       <p>Welcome to the project portfolio of Rüdev. Check out the ResumeBot!</p>
       <p>
@@ -45,7 +47,7 @@ const ProjectsPage = ({ data }) => (
             <p>{project.node.excerpt}</p>
           </ProjectContainer>
         ))}
-    </section>
+    </Section>
   </Layout>
 )
 

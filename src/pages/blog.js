@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
+import Section from "../components/section"
+
 
 const BlogContainer = styled.div`
   @media (min-width: 992px) {
@@ -26,7 +28,7 @@ const StyledLink = styled(Link)`
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <section>
+    <Section>
       <h2>RüBlog</h2>
       <p>
         Read all about it! Berlin web development company writes about web
@@ -48,7 +50,7 @@ const BlogPage = ({ data }) => (
             <p>{post.node.excerpt}</p>
           </BlogContainer>
         ))}
-    </section>
+    </Section>
   </Layout>
 )
 

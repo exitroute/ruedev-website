@@ -1,10 +1,11 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Section from "../components/section"
 
 const AboutPage = () => (
   <Layout>
-    <section>
+    <Section>
       <h2>About RüDev</h2>
       <p>
         RüDev is a web development company that helps people and businesses get
@@ -37,8 +38,8 @@ const AboutPage = () => (
         We love doing this. We want you to enjoy the experience as much as we
         do!
       </p>
-    </section>
-    <section>
+    </Section>
+    <Section>
       <h2>About Ryan</h2>
       <p>
         Ryan James O'Shea is a web developer living and working in Silicon
@@ -65,7 +66,7 @@ const AboutPage = () => (
         needs a fun fact about him, he usual says something about: Sandor
         Clegane, Pete Doherty or Sven Martinek.
       </p>
-    </section>
+    </Section>
   </Layout>
 )
 
