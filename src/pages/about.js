@@ -1,39 +1,48 @@
 import React from "react"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Section from "../components/section"
+
+const DefList = styled.dl`
+  dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 6rem;
+  }
+  dt::after {
+    content: ":"
+  }
+  dd {
+    margin: 0 0 0 120px;
+  }
+`
 
 const AboutPage = () => (
   <Layout>
     <Section>
       <h2>About RüDev</h2>
       <p>
-        RüDev is a web development company that helps people and businesses get
-        the most from contemporary web development and design.
+        RüDev is a web development company in Berlin that helps people get the
+        most from contemporary web development.
       </p>
       <p>
-        Rüdev was started by Ryan James O'Shea after forking his career, and
-        then studying web development.
-      </p>
-      <p>
-        Just before he started the final project of his course, he realised that
-        any app he sbuilt would be most likely kinda useless. A typical learner
-        project. Better to use the time to start building an organisation, a
-        company, a place to work.
+        Rüdev was started by Ryan James O'Shea after forking his edtech career,
+        and studying web development.
       </p>
       <p>
         Rüdev works with small businesses, the self-employed, or anyone who
-        wants to get more from the internet and web development. We love to
-        explore and find what the problem and opportunity is, and then make what
-        is needed and what is useful.
+        wants to get more from the internet and web development.
       </p>
       <p>
-        Maybe you have a website and it's no longer meeting you needs, or maybe
-        you need a website but you are overwhelmed by the options. Rüdev will
-        help you decide on the best solution and deliver something custom made
-        that will
+        We love to explore problems, find hidden opportunites, and then do
+        killer projects that make people and work better, and smile.
       </p>
-      <p>Your experience with Rüdev is why Rüdev exists.</p>
+      <p>
+        So, let's talk about your website, or your data layer, or your sense of
+        being overwhelmed with choices, and make more sense of it all.
+      </p>
       <p>
         We love doing this. We want you to enjoy the experience as much as we
         do!
@@ -42,30 +51,43 @@ const AboutPage = () => (
     <Section>
       <h2>About Ryan</h2>
       <p>
-        Ryan James O'Shea is a web developer living and working in Silicon
-        Allee, Berlin.
+        Ryan James O'Shea is a trained web developer living and working in
+        Berlin.
       </p>
       <p>
-        Software development is a irresistable way for him to combine and use
-        his experience as a manager, a designer, and trainer with 10,000 hours
-        in the classroom.
-      </p>
-      <p>
-        From that experience as a trainer and manager, he got to know the
-        importance of learning and performance. He wants to learn about his
-        clients needs, reason about those needs, and then to perform as
-        developer.
+        He develops software because it gives him such a kick when he solves a
+        problem and it helps someone else with their goals.
       </p>
       <p>
         Before web development, Ryan had a 12 year career in edtech with Wall
-        Street English and Pearson Education, and has a training in
-        architectural design from the University of Strathcylde in Glasgow.
+        Street English and Pearson as a manager and trainer. 
       </p>
       <p>
-        If he's running a workshop and needs a warm up where the introduction
-        needs a fun fact about him, he usual says something about: Sandor
+        He also has a education in architectural design from the University 
+        of Strathcylde in Glasgow.
+      </p>
+      <p>
+        Fun fact: if he's running a workshop and has warm up where the introduction
+        needs a fun fact about him, he usually says something about: Sandor
         Clegane, Pete Doherty or Sven Martinek.
       </p>
+    </Section>
+    <Section>
+      <h2>Tech Stack</h2>
+      <DefList>
+        <dt>Core</dt>
+        <dd>HTML5, CSS3, Javascript</dd>
+        <dt>Client-side</dt>
+        <dd>SASS, Bootstrap 4, styled-components, React, Redux</dd>
+        <dt>Server-side</dt>
+        <dd>Node, Express, MongoDB, Mongoose</dd>
+        <dt>Dev Tools</dt>
+        <dd>Ubuntu, MacOS, VSCode, Bash, Git, Git Kracken</dd>
+        <dt>Deployment</dt>
+        <dd>Gatsby, Netlify, Now, Next</dd>
+        <dt>Methods</dt>
+        <dd>Scrum, Kanban, Wardley Maps</dd>
+      </DefList>
     </Section>
   </Layout>
 )
