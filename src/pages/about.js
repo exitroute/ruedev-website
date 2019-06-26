@@ -28,8 +28,8 @@ const AboutPage = () => (
         most from contemporary web development.
       </p>
       <p>
-        Rüdev was started by Ryan James O'Shea after forking his edtech career,
-        and studying web development.
+        Ryan James O'Shea started RüDev after forking his edtech career, and
+        studying web dev elopment.
       </p>
       <p>
         Rüdev works with small businesses, the self-employed, or anyone who
@@ -41,7 +41,7 @@ const AboutPage = () => (
       </p>
       <p>
         So, let's talk about your website, or your data layer, or your sense of
-        being overwhelmed with choices, and make more sense of it all.
+        being overwhelmed with choices, and make it work better.
       </p>
       <p>
         We love doing this. We want you to enjoy the experience as much as we
@@ -63,13 +63,36 @@ const AboutPage = () => (
         Street English and Pearson as a manager and trainer. 
       </p>
       <p>
-        He also has a education in architectural design from the University 
-        of Strathcylde in Glasgow.
+        He also has a education in architectural design from the University of
+        Strathcylde in Glasgow.
       </p>
       <p>
-        Fun fact: if he's running a workshop and has warm up where the introduction
-        needs a fun fact about him, he usually says something about: Sandor
-        Clegane, Pete Doherty or Sven Martinek.
+        <b>Fun fact</b>: if he's running a workshop with a warm-up where the
+        introduction needs a "fun fact", he usually says something about:&nbsp;
+        <a
+          href="https://en.wikipedia.org/wiki/Sandor_Clegane"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sandor Clegane
+        </a>
+        ,&nbsp;
+        <a
+          href="https://youtu.be/XJFPuz3MXho?t=12"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pete Doherty
+        </a>
+        , or&nbsp;
+        <a
+          href="https://youtu.be/LeMSz2v46Ok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Max Zander
+        </a>
+        .
       </p>
     </Section>
     <Section>
