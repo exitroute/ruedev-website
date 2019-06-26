@@ -9,15 +9,15 @@ const DefList = styled.dl`
     content: ":";
   }
   @media (min-width: 768px) {
-  dt {
-    float: left;
-    clear: left;
-    text-align: right;
+    dt {
+      float: left;
+      clear: left;
+      text-align: right;
       width: 7rem;
-  }
+    }
     dd {
       margin: 0 0 0.15rem 7.5rem;
-  }
+    }
   }
 `
 
@@ -62,7 +62,7 @@ const AboutPage = () => (
       </p>
       <p>
         Before web development, Ryan had a 12 year career in edtech with Wall
-        Street English and Pearson as a manager and trainer. 
+        Street English and Pearson as a manager and trainer.
       </p>
       <p>
         He also has a education in architectural design from the University of
