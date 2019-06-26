@@ -6,7 +6,7 @@ const Nav = styled.nav`
   padding-top: 2rem;
   display: flex;
   @media (min-width: 768px) and (max-width: 992px) {
-    justify-content: right
+    justify-content: right;
   }
 `
 const NavList = styled.ul`
@@ -23,7 +23,7 @@ const NavList = styled.ul`
   }
 `
 const NavLink = styled(Link).attrs({
-  activeClassName: "active"
+  activeClassName: "active",
 })`
   color: #000;
   text-decoration: none;
@@ -33,12 +33,16 @@ const NavLink = styled(Link).attrs({
 
   :hover {
     background: #85bb65;
-  }
-  
-  &.active {
-    background: pink;
+    color: #eee;
+    transition-duration: 500ms;
   }
 
+  &.active {
+    background: pink;
+    :hover{
+      color: #000;
+    }
+  }
 `
 
 const Menu = () => (
