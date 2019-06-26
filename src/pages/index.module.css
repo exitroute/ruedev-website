@@ -29,15 +29,18 @@ main {
   color: #222;
   text-decoration: none;
   display: block;
-  border: 3px solid #455f35;
+  border: 0.175rem solid #455f35;
   margin: 0.25rem 0;
   padding: 1rem;
   font-size: 1.2rem;
 }
 
 .nav li a:hover {
+  color: #eee;
+  font-weight: 700;
   background: #85bb65;
-  border: 3px solid #fff;
+  border: 0.175rem solid #fff;
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
