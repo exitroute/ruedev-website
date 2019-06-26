@@ -5,17 +5,19 @@ import Layout from "../components/layout"
 import Section from "../components/section"
 
 const DefList = styled.dl`
+  dt::after {
+    content: ":";
+  }
+  @media (min-width: 768px) {
   dt {
     float: left;
     clear: left;
     text-align: right;
-    width: 6rem;
+      width: 7rem;
   }
-  dt::after {
-    content: ":"
+    dd {
+      margin: 0 0 0.15rem 7.5rem;
   }
-  dd {
-    margin: 0 0 0 120px;
   }
 `
 
