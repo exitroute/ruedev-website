@@ -36,7 +36,7 @@ main {
 }
 
 .nav li a:hover {
-  color: #eee;
+  color: #fff;
   font-weight: 700;
   background: #85bb65;
   border: 0.175rem solid #fff;

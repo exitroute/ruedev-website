@@ -3,15 +3,17 @@ import Link from "gatsby-link"
 import styled from "styled-components"
 
 const Nav = styled.nav`
-  padding-top: 2rem;
   display: flex;
   @media (min-width: 768px) and (max-width: 992px) {
-    justify-content: right;
+    justify-content: flex-end;
   }
 `
 const NavList = styled.ul`
+  
   list-style: none;
   display: flex;
+  align-items: center;
+  margin-bottom: 0;
   margin-left: 0rem;
 
   li {
@@ -33,13 +35,13 @@ const NavLink = styled(Link).attrs({
 
   :hover {
     background: #85bb65;
-    color: #eee;
+    color: #fff;
     transition-duration: 500ms;
   }
 
   &.active {
     background: pink;
-    :hover{
+    :hover {
       color: #000;
     }
   }

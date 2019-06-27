@@ -18,7 +18,10 @@ const Container = styled.div`
     padding-top: 0;
     margin-bottom: 2rem;
     section {
+      max-width: 600px;
+      margin: 0 auto;
       @media (min-width: 992px) {
+        max-width: none;
         display: grid;
         grid-template-columns: 16rem minmax(auto, 600px);
         grid-auto-rows: auto;

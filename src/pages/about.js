@@ -21,6 +21,14 @@ const DefList = styled.dl`
   }
 `
 
+const Link = styled.a`
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+    transition: 250ms;
+  }
+`
+
 const AboutPage = () => (
   <Layout>
     <Section>
@@ -61,8 +69,23 @@ const AboutPage = () => (
         problem and it helps someone else with their goals.
       </p>
       <p>
-        Before web development, Ryan had a 12 year career in edtech with Wall
-        Street English and Pearson as a manager and trainer.
+        Before web development, Ryan had a 12 year career in edtech with&nbsp;
+        <Link
+          href="https://www.wallstreetenglish.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Wall Street English
+        </Link>{" "}
+        and&nbsp;
+        <Link
+          href="https://www.pearson.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pearson
+        </Link>{" "}
+        as a manager and trainer.
       </p>
       <p>
         He also has a education in architectural design from the University of
@@ -71,29 +94,29 @@ const AboutPage = () => (
       <p>
         <b>Fun fact</b>: if he's running a workshop with a warm-up where the
         introduction needs a "fun fact", he usually says something about:&nbsp;
-        <a
+        <Link
           href="https://en.wikipedia.org/wiki/Sandor_Clegane"
           target="_blank"
           rel="noopener noreferrer"
         >
           Sandor Clegane
-        </a>
+        </Link>
         ,&nbsp;
-        <a
+        <Link
           href="https://youtu.be/XJFPuz3MXho?t=12"
           target="_blank"
           rel="noopener noreferrer"
         >
           Pete Doherty
-        </a>
+        </Link>
         , or&nbsp;
-        <a
+        <Link
           href="https://youtu.be/LeMSz2v46Ok"
           target="_blank"
           rel="noopener noreferrer"
         >
           Max Zander
-        </a>
+        </Link>
         .
       </p>
     </Section>
